@@ -213,15 +213,68 @@ img {
 }
 /* ingredients */
 .ingredients {
-  padding: 12;
+  padding-top: 120px;
+  padding-bottom: 60px;
 }
-.ingredients-list {
-  max-width: 1136px;
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
+.ingredients-title {
+  max-width: 412px;
+  margin: 0 auto 60px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+.ingredients-title span {
+  color: #fd9222;
+}
 
-  display: flex;
-  flex-wrap: wrap;
+.ingredients-list {
+  display: grid;
+  grid-template-columns: repeat(4, 260px);
   gap: 32px;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.ingredient-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 270px;
+  padding: 28px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+.ingredient-card img {
+  max-width: 214px;
+  height: 160px;
+  margin: 0 auto 24px;
+  object-fit: contain;
+}
+
+.ingredient-card h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.ingredient-card--orange {
+  background-color: #fd9222;
+  color: #ffffff;
+}
+
+.ingredient-card--dark {
+  background-color: #1e1823;
+  color: #ffffff;
+}
+
+.ingredient-card--light {
+  border-color: #fd9222;
+  background-color: #ffffff;
+  color: #111111;
 }
